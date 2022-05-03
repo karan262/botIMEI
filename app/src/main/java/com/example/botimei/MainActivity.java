@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         IMEINumber = telephonyManager.getDeviceId();
 
         Toast.makeText(this, "IMEI : "+IMEINumber, Toast.LENGTH_SHORT).show();
-        System.out.print("Karan"+IMEINumber+"\n");
+        System.out.print("Karanl"+IMEINumber+"\n");
         textView.setText(IMEINumber);
         /* commented text
 //        String result = convertStringToBinary(IMEINumber);
