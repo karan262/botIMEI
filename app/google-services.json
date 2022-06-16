@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "823082487377",
+    "project_id": "cowerta",
+    "storage_bucket": "cowerta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823082487377:android:065137a24d249b3a25b270",
+        "android_client_info": {
+          "package_name": "com.example.botimei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823082487377-pkrv1oq8p37dhqmpmbts47se3chv9jt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiK18DdoEpG31vJ35ZFHa9Fx7lqJ3hssU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823082487377-pkrv1oq8p37dhqmpmbts47se3chv9jt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

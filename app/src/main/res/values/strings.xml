@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">botIMEI</string>
+    <string name="email">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_text">login</string>
+    <string name="SignIn">SIGN IN</string>
+    <string name="SignUp">SIGN UP</string>
+    <string name="Dashboard">DASHBOARD</string>
+    <string name="usernameHint">Username or Mobile No</string>
+    <string name="forgotPwd">Forgot Password?</string>
+    <string name="signUplink"><u>Not Registered?</u></string>
+    <string name="already_registered"><u>Already Registered ?</u></string>
 </resources>
