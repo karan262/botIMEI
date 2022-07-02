@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                 /*if (email.getText().toString().isEmpty() || password.getText().toString().isEmpty())
                     Toast.makeText(getApplicationContext(), "All fields must be filled", Toast.LENGTH_LONG).show();*/
                 else if (password.getText().toString().length() < 8) {
-                    Toast.makeText(getApplicationContext(), "Password Must be Atleast 8 Characters Long", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Password must be 8 characters long", Toast.LENGTH_LONG).show();
                 } else {
                     checkLogin(email.getText().toString(), password.getText().toString());
                 }
@@ -84,9 +84,10 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Welcome"+email+"\nYou are logged in",Toast.LENGTH_LONG).show();
 
                             Intent i;
-                            i = new Intent(getApplicationContext(), MainActivity.class);
+                            i = new Intent(getApplicationContext(), TestActivity.class);
                             startActivity(i);
-                        } else {
+                        }
+                        else {
                             Toast.makeText(LoginActivity.this, "Login Failed\n Check your username or password",Toast.LENGTH_LONG).show();
                         }
                     }

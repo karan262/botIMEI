@@ -40,17 +40,12 @@ public class MainActivity extends AppCompatActivity {
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 
         if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_PHONE_STATE}, REQUEST_CODE);
-
             return;
-
         }
-
         IMEINumber = telephonyManager.getDeviceId();
-
         Toast.makeText(this, "IMEI : "+IMEINumber, Toast.LENGTH_SHORT).show();
-        System.out.print("Karanl"+IMEINumber+"\n");
+        System.out.println("IMEI Number :"+IMEINumber+"\n");
         textView.setText(IMEINumber);
         /* commented text
 //        String result = convertStringToBinary(IMEINumber);
@@ -77,13 +72,10 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String permissi
         case REQUEST_CODE: {
 
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-//                Toast.makeText(this, "Permission granted.", Toast.LENGTH_SHORT).show();
-
-            } else {
-
-//                Toast.makeText(this, "Permission denied.", Toast.LENGTH_SHORT).show();
-
+//                  Toast.makeText(this, "Permission granted.", Toast.LENGTH_SHORT).show();
+            }
+            else {
+//                  Toast.makeText(this, "Permission denied.", Toast.LENGTH_SHORT).show();
             }
 
         }
